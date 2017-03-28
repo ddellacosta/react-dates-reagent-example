@@ -10,6 +10,11 @@ This example uses the basic reagent template generated via `lein new reagent`, a
 [cljsjs/react-dates "8.2.1-2"]
 ```
 
+Relevant links:
+* [Official Repository](https://github.com/airbnb/react-dates)
+* [cljsjs Sub-repository](https://github.com/cljsjs/packages/tree/master/react-dates)
+* [ring-cljsjs](https://github.com/deraen/ring-cljsjs)
+
 The important bits can be found in `src/cljs/react_dates_reagent_example/core.cljs`:
 
 ```clojure
@@ -58,11 +63,6 @@ The important bits can be found in `src/cljs/react_dates_reagent_example/core.cl
           :on-dates-change #(swap! date-picker update :dates (partial merge-in-dates %))
           :focused-input (:focused-input @date-picker)}]]])))
 ```
-
-Relevant links:
-* [Official Repository](https://github.com/airbnb/react-dates)
-* [cljsjs Sub-repository](https://github.com/cljsjs/packages/tree/master/react-dates)
-* [ring-cljsjs](https://github.com/deraen/ring-cljsjs)
 
 Screenshot:
 
