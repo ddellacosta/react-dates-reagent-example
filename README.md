@@ -1,0 +1,13 @@
+
+# react-dates Reagent Example
+
+Very basic example code to get you up and running with `react-dates` in a Reagent context.
+
+This example uses the basic reagent template generated via `lein new reagent`, and includes a few other dependencies:
+
+```clojure
+[ring-cljsjs "0.1.0"] ; to load in CSS assets
+[cljsjs/react-dates "8.2.1-2"]
+```
+
+The important bits can be found in `src/cljs/react_dates_reagent_example/core.cljs`.
