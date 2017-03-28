@@ -11,3 +11,5 @@ This example uses the basic reagent template generated via `lein new reagent`, a
 ```
 
 The important bits can be found in `src/cljs/react_dates_reagent_example/core.cljs`.
+
+![screenshot](https://raw.githubusercontent.com/ddellacosta/react-dates-reagent-example/master/reagent-example-screenshot.png)
