@@ -34,7 +34,7 @@ The important bits can be found in `src/cljs/react_dates_reagent_example/core.cl
   [selected-dates current-dates]
   (->> (js->clj selected-dates)
        ;; Convert Moment.js (used by default in react-dates) dates to
-       ;; vanilla JS Dates
+       ;; vanilla JS Dates, and filter out nils while we're at it
        (reduce (fn [h [k v]] (if v (assoc h k (.toDate v)) h)) {})
        (merge current-dates)))
 
